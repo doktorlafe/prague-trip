@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prague Trip Guide</title>
+<style>
+  :root{
+    --bg:#faf7f2; --surface:#ffffff; --text:#241f1a; --muted:#6b6058;
+    --accent:#a3242a; --accent-dark:#7a1a1f; --border:#e8ddd0; --tag:#f1e4d3;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.55;
+  }
+  header{
+    background:linear-gradient(135deg,var(--accent-dark),var(--accent));
+    color:#fff; padding:3rem 1.5rem 2rem; text-align:center;
+  }
+  header h1{margin:0 0 .4rem; font-size:2.2rem; letter-spacing:.02em;}
+  header p{margin:0; opacity:.9; font-size:1rem;}
+  nav{
+    position:sticky; top:0; z-index:10; background:var(--surface);
+    border-bottom:1px solid var(--border); overflow-x:auto; white-space:nowrap;
+    padding:.6rem 1rem; box-shadow:0 2px 6px rgba(0,0,0,.05);
+  }
+  nav a{
+    color:var(--accent-dark); text-decoration:none; font-size:.85rem; font-weight:600;
+    margin-right:1.2rem; text-transform:uppercase; letter-spacing:.03em;
+  }
+  nav a:hover{text-decoration:underline;}
+  main{max-width:920px; margin:0 auto; padding:2rem 1.5rem 4rem;}
+  section{margin-bottom:3rem; scroll-margin-top:3.5rem;}
+  section h2{
+    font-size:1.5rem; border-bottom:2px solid var(--accent); padding-bottom:.4rem;
+    margin-bottom:1rem; color:var(--accent-dark);
+  }
+  section h3{font-size:1.1rem; margin:1.5rem 0 .5rem;}
+  .lede{color:var(--muted); font-size:1rem; margin-bottom:1.2rem;}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;}
+  .card{
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:1rem 1.1rem;
+  }
+  .card h4{margin:0 0 .3rem; font-size:1.02rem;}
+  .card p{margin:0; font-size:.92rem; color:var(--muted);}
+  .tag{
+    display:inline-block; background:var(--tag); color:var(--accent-dark);
+    font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em;
+    padding:.15rem .5rem; border-radius:5px; margin-bottom:.5rem;
+  }
+  table{width:100%; border-collapse:collapse; font-size:.92rem;}
+  th,td{text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--border);}
+  th{color:var(--muted); font-weight:700; text-transform:uppercase; font-size:.75rem;}
+  .quickfacts{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1rem;}
+  .quickfacts span{
+    background:rgba(255,255,255,.15); padding:.3rem .7rem; border-radius:20px; font-size:.85rem;
+  }
+  .callout{
+    background:var(--tag); border-left:4px solid var(--accent); padding:.8rem 1rem;
+    border-radius:6px; font-size:.9rem; margin:1rem 0;
+  }
+  footer{
+    text-align:center; padding:2rem 1rem; color:var(--muted); font-size:.8rem;
+    border-top:1px solid var(--border);
+  }
+  footer a{color:var(--accent-dark);}
+  .sources{font-size:.85rem; color:var(--muted);}
+  .sources li{margin-bottom:.3rem;}
+  @media (max-width:600px){
+    header h1{font-size:1.6rem;}
+    nav a{margin-right:.8rem; font-size:.78rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Prague Trip Guide</h1>
+  <p>Sights, food, day trips &amp; a Prague&nbsp;7 deep dive — compiled from Lonely Planet, Time Out, Fodor's, the MICHELIN Guide and local Prague blogs.</p>
+  <div class="quickfacts">
+    <span>📅 Dates: TBD</span>
+    <span>👥 Travelers: TBD</span>
+    <span>💰 Currency: CZK</span>
+    <span>🚇 Transport: PID / Lítačka app</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#classic">Classic Sights</a>
+  <a href="#prague7">Prague 7</a>
+  <a href="#food">Food &amp; Drink</a>
+  <a href="#neighborhoods">Vinohrady &amp; Karlín</a>
+  <a href="#daytrips">Day Trips</a>
+  <a href="#practical">Practical Info</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<main>
+
+  <section id="classic">
+    <h2>Classic Sights — Old Town, Castle &amp; Josefov</h2>
+    <p class="lede">The core loop most guides (Lonely Planet included) build a Prague trip around.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Landmark</span>
+        <h4>Old Town Square &amp; Astronomical Clock</h4>
+        <p>15th-century astronomical clock chimes on the hour with a small mechanical show. Anchor point for Old Town.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Landmark</span>
+        <h4>Charles Bridge</h4>
+        <p>650-year-old Gothic bridge lined with 30 baroque statues. Go at sunrise to beat the crowds.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Landmark</span>
+        <h4>Prague Castle Complex</h4>
+        <p>One of the largest castle complexes in the world — St. Vitus Cathedral, Golden Lane, Old Royal Palace. Grounds are free; paid circuits cover the interiors.</p>
+      </div>
+      <div class="card">
+        <span class="tag">History</span>
+        <h4>Josefov — Old Jewish Cemetery</h4>
+        <p>Haunting historic Jewish Quarter with the Old Jewish Cemetery and several synagogues.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Off the main loop</span>
+        <h4>Vyšehrad Fortress</h4>
+        <p>Quieter hilltop fortress and park south of the center — river views without Castle-district crowds.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Free</span>
+        <h4>Lesser Town (Malá Strana)</h4>
+        <p>Cobbled lanes below the Castle; Lennon Wall and Kampa Island are easy add-ons on the walk up.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prague7">
+    <h2>Prague 7 — Holešovice &amp; Letná</h2>
+    <p class="lede">The district you specifically asked about: riverside, less touristy, and a genuine local food/art scene.</p>
+
+    <h3>Culture &amp; parks</h3>
+    <div class="grid">
+      <div class="card"><h4>Letná Park (Letenské sady)</h4><p>Hilltop park with sweeping views over Charles Bridge and the river; home to the giant Metronome, on the site of the former Stalin monument.</p></div>
+      <div class="card"><h4>Veletržní palác (Trade Fair Palace)</h4><p>National Gallery's home for 19th–21st century and modern/contemporary art.</p></div>
+      <div class="card"><h4>DOX Centre for Contemporary Art</h4><p>Leading contemporary art space with rotating exhibitions and the "Gulliver" airship installation.</p></div>
+      <div class="card"><h4>Výstaviště Praha</h4><p>Historic exhibition grounds; events, markets, and the illuminated Křižík Fountain shows.</p></div>
+      <div class="card"><h4>Stromovka</h4><p>Prague's largest park, mostly frequented by locals rather than tourists.</p></div>
+      <div class="card"><h4>Bio Oko</h4><p>Independent cinema and active cultural venue with a great bar, hosts events and festivals.</p></div>
+    </div>
+
+    <h3>Where to eat</h3>
+    <div class="grid">
+      <div class="card"><h4>Holešovice Market</h4><p>Central food hub of the district. New arrivals as of late 2025 include <strong>Skô</strong> (Slovak-influenced, slow-roasted &amp; wood-fired by chef Tomáš Valkovič) and <strong>Naše maso Holešovice</strong>, the nose-to-tail butcher's outpost from the beloved Old Town original.</p></div>
+      <div class="card"><h4>The Eatery</h4><p>Modern Czech cuisine.</p></div>
+      <div class="card"><h4>SaSaZu</h4><p>Southeast Asian flavors, also a nightlife venue.</p></div>
+      <div class="card"><h4>Mr. HotDoG</h4><p>Gourmet hot dogs — casual pick.</p></div>
+      <div class="card"><h4>Bar Cobra</h4><p>Blends café culture by day with nightlife by night.</p></div>
+    </div>
+
+    <h3>Coffee</h3>
+    <div class="grid">
+      <div class="card"><h4>21 Coffee</h4><p>Specialty coffee, inviting atmosphere.</p></div>
+      <div class="card"><h4>Café Letka</h4><p>Gourmet coffee, shabby-chic interior.</p></div>
+      <div class="card"><h4>Format Espresso Bar</h4><p>Minimalist, focused on high-quality specialty coffee.</p></div>
+    </div>
+
+    <h3>Nightlife</h3>
+    <div class="grid">
+      <div class="card"><h4>Cross Club</h4><p>Distinctive industrial/steampunk-style club — a Prague institution for alternative nightlife.</p></div>
+      <div class="card"><h4>Letná beer garden (Nad Letenským sadem)</h4><p>Outdoor beer garden in the park with sunset views over the river.</p></div>
+    </div>
+
+    <div class="callout">
+      <strong>Suggested route:</strong> Vltavská metro (line C) → Veletržní palác → DOX → Holešovice Market (lunch) → Výstaviště → up into Letná Park for the Metronome view and a beer at the garden → walk down the Letná stairs toward Malá Strana.
+    </div>
+  </section>
+
+  <section id="food">
+    <h2>Food &amp; Drink — City-wide</h2>
+
+    <h3>Classic Czech</h3>
+    <div class="grid">
+      <div class="card"><h4>Lokál Dlouhááá</h4><p>Dlouhá 33, Staré Město. Goulash, schnitzel, fried cheese, and tank-fresh Pilsner Urquell in a long, 1970s-style hall. Reserve ahead — it fills up fast.</p></div>
+      <div class="card"><h4>U Fleků</h4><p>Historic brewery/beer hall dating back centuries, known for its own dark lager.</p></div>
+      <div class="card"><h4>Kantyna</h4><p>Local Czech meats, great beer, and what's often called the best burger in Prague.</p></div>
+      <div class="card"><h4>U Kroka / Tiskárna</h4><p>Upscale-feeling traditional Czech cuisine, not too pricey.</p></div>
+    </div>
+
+    <h3>Hidden gems &amp; local favorites (Time Out picks)</h3>
+    <div class="grid">
+      <div class="card"><h4>Etapa</h4><p>Karlín — curated brunch/lunch menu, fresh and local.</p></div>
+      <div class="card"><h4>KRO Karlin Bistro &amp; Cocktail Bar</h4><p>Chicken-focused menu, casual charm.</p></div>
+      <div class="card"><h4>Gao Den</h4><p>Prague's best Vietnamese, unassuming location — the fried spring rolls stand out.</p></div>
+      <div class="card"><h4>The Spot Cafe</h4><p>Hidden gem in a historic Old Town-adjacent neighborhood.</p></div>
+    </div>
+
+    <h3>Special occasion — MICHELIN Guide Czechia 2025</h3>
+    <table>
+      <tr><th>Restaurant</th><th>Notes</th></tr>
+      <tr><td>Field</td><td>Retained its star; chef Miroslav Nosek won the MICHELIN Service Award.</td></tr>
+      <tr><td>La Degustation Bohême Bourgeoise</td><td>Retained its star — modern Czech tasting menu.</td></tr>
+      <tr><td>LEVITATE</td><td>New for 2025 — Czech ingredients with Asian spices and Nordic technique.</td></tr>
+      <tr><td>Casa De Carli</td><td>New — Italian fine dining.</td></tr>
+      <tr><td>Štangl</td><td>New — also holds a Green Star.</td></tr>
+      <tr><td>Taro</td><td>Vietnamese; chef Khanh Ta won the MICHELIN Young Chef Award.</td></tr>
+    </table>
+  </section>
+
+  <section id="neighborhoods">
+    <h2>Vinohrady &amp; Karlín — local, low-tourist dining</h2>
+    <p class="lede">If Prague 7 whets your appetite for non-touristy neighborhoods, these two are the other local favorites.</p>
+    <div class="grid">
+      <div class="card"><h4>Café Sladkovský</h4><p>Vinohrady institution on Sevastopolská — Czech-modern cooking, seasonal ingredients.</p></div>
+      <div class="card"><h4>Aromi</h4><p>One of Prague's best Italian restaurants — fresh pasta, natural wines.</p></div>
+      <div class="card"><h4>Vinohradský Parliament</h4><p>Craft beer bar and kitchen on Korunní Street, rotating Czech taps.</p></div>
+      <div class="card"><h4>Riegrovy sady</h4><p>Popular sunset park with beer gardens — full of locals with drinks and picnics in summer.</p></div>
+      <div class="card"><h4>Karlín (general)</h4><p>Rebuilt after the 2002 floods into one of Prague's leading food &amp; culture districts — chic restaurants, cafés, wine bars (e.g. Veltlin).</p></div>
+    </div>
+  </section>
+
+  <section id="daytrips">
+    <h2>Day Trips</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">~1 hr by train</span>
+        <h4>Kutná Hora</h4>
+        <p>UNESCO-listed medieval silver-mining town. The main draw is the <strong>Sedlec Ossuary</strong> ("Bone Church"), decorated with the bones of roughly 40,000 people, plus the Late Gothic <strong>St. Barbara's Cathedral</strong>. Round-trip train ~140–180 CZK. Easily doable as a half/full day.</p>
+      </div>
+      <div class="card">
+        <span class="tag">~2.5–3 hrs by train/bus</span>
+        <h4>Český Krumlov</h4>
+        <p>Fairy-tale medieval town encircled by the Vltava, topped by a castle. Local experts recommend <strong>staying overnight</strong> rather than rushing a day trip — the town empties out and feels completely different once the day-trip coaches leave. If doing it in a day, avoid July/August; shoulder season (Mar–May, Sep–Nov) is much better.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="practical">
+    <h2>Practical Info</h2>
+    <div class="callout">
+      <strong>Transport:</strong> Buy tickets via the PID Lítačka app or station machines. A 24h or 72h pass covers metro, trams and buses — validate paper tickets on boarding.<br>
+      <strong>Tipping:</strong> ~10%, usually rounded up.<br>
+      <strong>Safety:</strong> Very safe overall; watch for pickpockets on Charles Bridge, Old Town Square, and crowded trams/metro.
+    </div>
+  </section>
+
+  <section id="sources">
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li><a href="https://www.lonelyplanet.com/articles/best-things-to-do-in-prague" target="_blank" rel="noopener">Lonely Planet — 12 things to do in Prague</a></li>
+      <li><a href="https://www.timeout.com/prague/restaurants/best-restaurants-in-prague" target="_blank" rel="noopener">Time Out Prague — 19 Best Restaurants in Prague</a></li>
+      <li><a href="https://www.fodors.com/world/europe/czech-republic/prague/neighborhoods/letna-holesovice-and-troja/restaurants" target="_blank" rel="noopener">Fodor's — Best Restaurants in Letná, Holešovice &amp; Troja</a></li>
+      <li><a href="https://www.expats.cz/czech-news/article/where-to-eat-letna-holesovice-prague-neighborhoods-ambiente" target="_blank" rel="noopener">Expats.cz — Where to eat in Letná and Holešovice</a></li>
+      <li><a href="https://www.mywanderlust.pl/holesovice-prague-guide/" target="_blank" rel="noopener">My Wanderlust — Holešovice: a mini guide to Prague's coolest district</a></li>
+      <li><a href="https://www.adventurouskate.com/day-trips-from-prague/" target="_blank" rel="noopener">Adventurous Kate — 15 Best Day Trips from Prague</a></li>
+      <li><a href="https://guide.michelin.com/us/en/prague/restaurants" target="_blank" rel="noopener">MICHELIN Guide Czechia — Prague restaurants</a></li>
+      <li><a href="https://www.tasteofprague.com/pragueblog/michelin-stars-prague-2025" target="_blank" rel="noopener">Taste of Prague — 2025 Michelin guide for Prague and Czechia</a></li>
+      <li><a href="https://www.insidehook.com/food-travel/best-prague-bars" target="_blank" rel="noopener">InsideHook — Best Prague Bars Across 8 Neighborhoods</a></li>
+      <li><a href="https://bestpragueguide.com/en/blog/vinohrady-prague-guide" target="_blank" rel="noopener">Best Prague Guide — Vinohrady</a></li>
+      <li><a href="https://jaywaytravel.com/blog/karlin-prague-8-guide" target="_blank" rel="noopener">Jayway Travel — Where the locals go: Karlín</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Compiled for personal trip planning. Prices and opening details change — verify before you go.<br>
+  See also: <a href="README.md">README</a> · <a href="itinerary.md">itinerary.md</a> · <a href="budget.md">budget.md</a>
+</footer>
+
+</body>
+</html>
