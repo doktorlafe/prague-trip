@@ -1,22 +1,24 @@
-# Prague Trip
+# Prague, Beyond the Postcard
 
-Trip planning docs for a visit to Prague, Czech Republic.
+Prague travel guide published at **https://prg.thugsclub.eu**.
 
-- **Dates:** TBD
-- **Travelers:** TBD
-- **Currency:** Czech Koruna (CZK)
-- **Language:** Czech (English widely spoken in tourist areas)
+The site is a single self-contained `index.html`: no build step, no external requests, no tracking. It also works offline if you open it straight from disk.
 
 ## Contents
 
-- [`itinerary.md`](itinerary.md) — day-by-day plan
-- [`prague-7-guide.md`](prague-7-guide.md) — deep dive on the Holešovice / Letná district (Prague 7)
-- [`budget.md`](budget.md) — cost planning
-- [`packing-checklist.md`](packing-checklist.md) — what to bring
+- [`index.html`](index.html): the full guide (sights with prices and hours, transport, history, timed itineraries, Prague 7 deep dive, food, day trips, scams, phrasebook)
+- [`itinerary.md`](itinerary.md): day-by-day planning notes
+- [`prague-7-guide.md`](prague-7-guide.md): Holešovice / Letná notes
+- [`budget.md`](budget.md): cost planning
+- [`packing-checklist.md`](packing-checklist.md): what to bring
 
-## Quick reference
+## Deployment (GitHub Pages)
 
-- **Getting around:** Prague has an efficient integrated public transport system (metro, trams, buses) run by DPP. Buy tickets via the **PID Lítačka** app or at kiosks/machines — a 30/90-minute ticket or a 24h/72h pass are the usual options. Validate paper tickets on boarding.
-- **Airport:** Václav Havel Airport Prague (PRG); Airport Express bus or public bus + metro connects to the center.
-- **Tipping:** ~10% in restaurants is customary, often rounded up.
-- **Safety:** Generally very safe; watch for pickpockets in dense tourist areas (Charles Bridge, Old Town Square, public transport).
+`CNAME` sets the custom domain and `.nojekyll` makes Pages serve the files as-is.
+
+1. **DNS** at the `thugsclub.eu` DNS provider: add a `CNAME` record `prg` → `doktorlafe.github.io.`
+2. **Pages**: repo **Settings → Pages → Build and deployment → Deploy from a branch**. Pick the branch that holds `index.html` and the folder `/ (root)`.
+3. **Custom domain**: confirm it reads `prg.thugsclub.eu`, wait for the DNS check, then tick **Enforce HTTPS** once the certificate is issued.
+4. **Recommended**: verify `thugsclub.eu` under GitHub **Settings → Pages → Verified domains** (account level), to prevent subdomain takeover.
+
+Check it with `dig +short prg.thugsclub.eu CNAME`, which should return `doktorlafe.github.io.`
