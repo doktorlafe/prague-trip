@@ -68,6 +68,16 @@
   footer a{color:var(--accent-dark);}
   .sources{font-size:.85rem; color:var(--muted);}
   .sources li{margin-bottom:.3rem;}
+  .express{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:1.4rem 1.6rem; box-shadow:0 4px 14px rgba(0,0,0,.04);
+  }
+  .express h3{margin-top:0; font-size:.95rem; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-dark);}
+  .express-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.2rem;}
+  .express ol,.express ul{margin:.3rem 0 0; padding-left:1.2rem; font-size:.9rem;}
+  .express li{margin-bottom:.3rem;}
+  .express-col{border-left:3px solid var(--border); padding-left:1rem;}
+  .express-col:first-child{border-left:none; padding-left:0;}
   @media (max-width:600px){
     header h1{font-size:1.6rem;}
     nav a{margin-right:.8rem; font-size:.78rem;}
@@ -88,6 +98,7 @@
 </header>
 
 <nav>
+  <a href="#express">Express Summary</a>
   <a href="#classic">Classic Sights</a>
   <a href="#prague7">Prague 7</a>
   <a href="#food">Food &amp; Drink</a>
@@ -98,6 +109,53 @@
 </nav>
 
 <main>
+
+  <section id="express">
+    <h2>Express Summary</h2>
+    <p class="lede">The 60-second version — jump to any section below for full detail and sources.</p>
+    <div class="express">
+      <div class="express-grid">
+        <div class="express-col">
+          <h3>Top 5 sights</h3>
+          <ol>
+            <li>Charles Bridge (go at sunrise)</li>
+            <li>Prague Castle complex + St. Vitus Cathedral</li>
+            <li>Old Town Square &amp; Astronomical Clock</li>
+            <li>Letná Park (Prague 7 — Metronome view)</li>
+            <li>Old Jewish Cemetery, Josefov</li>
+          </ol>
+        </div>
+        <div class="express-col">
+          <h3>Top 5 eats</h3>
+          <ol>
+            <li>Lokál Dlouhááá — classic Czech, reserve ahead</li>
+            <li>Kantyna — Czech meats, best burger in town</li>
+            <li>Holešovice Market (Prague 7) — Skô, Naše maso</li>
+            <li>Field or La Degustation — Michelin, special occasion</li>
+            <li>Aromi (Vinohrady) — best Italian in Prague</li>
+          </ol>
+        </div>
+        <div class="express-col">
+          <h3>Do this, skip that</h3>
+          <ul>
+            <li><strong>Do:</strong> spend a half/full day in Prague 7 (Holešovice/Letná) — real local scene, not just a photo stop</li>
+            <li><strong>Do:</strong> Kutná Hora as a half-day trip (~1 hr each way)</li>
+            <li><strong>Consider skipping:</strong> a Český Krumlov day-trip in Jul/Aug — stay overnight or go shoulder season</li>
+            <li><strong>Book ahead:</strong> Lokál, and any Michelin pick</li>
+          </ul>
+        </div>
+        <div class="express-col">
+          <h3>Logistics, fast</h3>
+          <ul>
+            <li>Buy transit tickets in the <strong>PID Lítačka</strong> app</li>
+            <li>Tip ~10%, rounded up</li>
+            <li>Watch bags on Charles Bridge / Old Town Square</li>
+            <li>Currency: CZK — cards widely accepted</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="classic">
     <h2>Classic Sights — Old Town, Castle &amp; Josefov</h2>
