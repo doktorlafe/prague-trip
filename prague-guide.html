@@ -12,14 +12,27 @@
   *{box-sizing:border-box;}
   body{
     margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg); color:var(--text); line-height:1.55;
+    background:var(--bg); color:var(--text); line-height:1.6;
   }
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;}
   header{
     background:linear-gradient(135deg,var(--accent-dark),var(--accent));
-    color:#fff; padding:3rem 1.5rem 2rem; text-align:center;
+    color:#fff; padding:2.4rem 1.5rem 2rem; text-align:center;
   }
-  header h1{margin:0 0 .4rem; font-size:2.2rem; letter-spacing:.02em;}
-  header p{margin:0; opacity:.9; font-size:1rem;}
+  .kicker{
+    display:block; font-size:.72rem; letter-spacing:.15em; text-transform:uppercase;
+    opacity:.85; margin-bottom:.6rem; font-weight:700;
+  }
+  header h1{margin:0 0 .5rem; font-size:2.4rem; letter-spacing:.01em; font-weight:700;}
+  .byline{
+    font-size:.85rem; opacity:.9; margin:0 0 1rem; font-style:italic;
+  }
+  header p.standfirst{
+    margin:0 auto; opacity:.95; font-size:1.05rem; max-width:640px; line-height:1.5;
+  }
+  .rule{
+    width:60px; height:2px; background:rgba(255,255,255,.6); margin:1rem auto;
+  }
   nav{
     position:sticky; top:0; z-index:10; background:var(--surface);
     border-bottom:1px solid var(--border); overflow-x:auto; white-space:nowrap;
@@ -87,8 +100,11 @@
 <body>
 
 <header>
-  <h1>Prague Trip Guide</h1>
-  <p>Sights, food, day trips &amp; a Prague&nbsp;7 deep dive — compiled from Lonely Planet, Time Out, Fodor's, the MICHELIN Guide and local Prague blogs.</p>
+  <span class="kicker">Travel Dispatch — Czech Republic</span>
+  <h1>Prague, Beyond the Postcard</h1>
+  <p class="byline">A field-researched itinerary, filed from the archives of Lonely Planet, Time&nbsp;Out, Fodor's, the MICHELIN Guide and Prague's own local press</p>
+  <div class="rule"></div>
+  <p class="standfirst">The castle and the bridge still earn every superlative thrown at them. But the real story this trip is Prague&nbsp;7 — the river district where the city's chefs, gallerists and night owls actually spend their time. Here's the full briefing.</p>
   <div class="quickfacts">
     <span>📅 Dates: TBD</span>
     <span>👥 Travelers: TBD</span>
@@ -111,8 +127,8 @@
 <main>
 
   <section id="express">
-    <h2>Express Summary</h2>
-    <p class="lede">The 60-second version — jump to any section below for full detail and sources.</p>
+    <h2>The Briefing</h2>
+    <p class="lede">For readers short on time: the verdict up front. Full reporting, with sourcing, follows below.</p>
     <div class="express">
       <div class="express-grid">
         <div class="express-col">
@@ -158,8 +174,8 @@
   </section>
 
   <section id="classic">
-    <h2>Classic Sights — Old Town, Castle &amp; Josefov</h2>
-    <p class="lede">The core loop most guides (Lonely Planet included) build a Prague trip around.</p>
+    <h2>The Postcard Circuit</h2>
+    <p class="lede">Old Town, the Castle and Josefov earn their fame honestly. Lonely Planet builds its Prague coverage around exactly this loop — and for first-timers, so should you.</p>
     <div class="grid">
       <div class="card">
         <span class="tag">Landmark</span>
@@ -195,8 +211,8 @@
   </section>
 
   <section id="prague7">
-    <h2>Prague 7 — Holešovice &amp; Letná</h2>
-    <p class="lede">The district you specifically asked about: riverside, less touristy, and a genuine local food/art scene.</p>
+    <h2>The Real Story: Holešovice &amp; Letná</h2>
+    <p class="lede">Ask a Prague local where they actually eat and drink, and the answer is rarely Old Town. It's here — the riverside district of galleries, markets and beer gardens that most first-time visitors walk straight past.</p>
 
     <h3>Culture &amp; parks</h3>
     <div class="grid">
@@ -236,7 +252,8 @@
   </section>
 
   <section id="food">
-    <h2>Food &amp; Drink — City-wide</h2>
+    <h2>The Full Menu: Where Prague Eats</h2>
+    <p class="lede">From tank-fresh Pilsner in a century-old hall to a fresh MICHELIN star, the city's dining scene has range. Below, three tiers — the classics, the ones locals actually recommend, and the ones worth dressing up for.</p>
 
     <h3>Classic Czech</h3>
     <div class="grid">
@@ -267,8 +284,8 @@
   </section>
 
   <section id="neighborhoods">
-    <h2>Vinohrady &amp; Karlín — local, low-tourist dining</h2>
-    <p class="lede">If Prague 7 whets your appetite for non-touristy neighborhoods, these two are the other local favorites.</p>
+    <h2>Two More Neighborhoods Worth the Detour</h2>
+    <p class="lede">If Prague 7 sold you on skipping the tourist trail, Vinohrady and Karlín are where that instinct pays off again — chef-driven menus, craft beer, and hardly a selfie stick in sight.</p>
     <div class="grid">
       <div class="card"><h4>Café Sladkovský</h4><p>Vinohrady institution on Sevastopolská — Czech-modern cooking, seasonal ingredients.</p></div>
       <div class="card"><h4>Aromi</h4><p>One of Prague's best Italian restaurants — fresh pasta, natural wines.</p></div>
@@ -279,7 +296,8 @@
   </section>
 
   <section id="daytrips">
-    <h2>Day Trips</h2>
+    <h2>Out of Town: Two Assignments</h2>
+    <p class="lede">One is a quick morning excursion; the other rewards patience. Choose according to how much time — and tolerance for tour buses — you have.</p>
     <div class="grid">
       <div class="card">
         <span class="tag">~1 hr by train</span>
@@ -295,7 +313,7 @@
   </section>
 
   <section id="practical">
-    <h2>Practical Info</h2>
+    <h2>The Fine Print</h2>
     <div class="callout">
       <strong>Transport:</strong> Buy tickets via the PID Lítačka app or station machines. A 24h or 72h pass covers metro, trams and buses — validate paper tickets on boarding.<br>
       <strong>Tipping:</strong> ~10%, usually rounded up.<br>
@@ -304,7 +322,8 @@
   </section>
 
   <section id="sources">
-    <h2>Sources</h2>
+    <h2>Sourcing</h2>
+    <p class="lede">Every claim above traces back to one of these. Verify prices and hours independently before you travel — they date fast.</p>
     <ul class="sources">
       <li><a href="https://www.lonelyplanet.com/articles/best-things-to-do-in-prague" target="_blank" rel="noopener">Lonely Planet — 12 things to do in Prague</a></li>
       <li><a href="https://www.timeout.com/prague/restaurants/best-restaurants-in-prague" target="_blank" rel="noopener">Time Out Prague — 19 Best Restaurants in Prague</a></li>
@@ -323,8 +342,8 @@
 </main>
 
 <footer>
-  Compiled for personal trip planning. Prices and opening details change — verify before you go.<br>
-  See also: <a href="README.md">README</a> · <a href="itinerary.md">itinerary.md</a> · <a href="budget.md">budget.md</a>
+  Filed for personal trip planning, not for publication. Prices and opening details change fast — verify before you go.<br>
+  Further reading: <a href="README.md">README</a> · <a href="itinerary.md">itinerary.md</a> · <a href="budget.md">budget.md</a>
 </footer>
 
 </body>
